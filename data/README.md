@@ -20,3 +20,7 @@ The data-set aims to answer the following key questions:
 ## Source
 Text and data extracted from [Kaggle](https://www.kaggle.com/kumarajarshi/life-expectancy-who)\
 Original data source from the World Health Organization
+
+# Stock Prices (S&P 500)
+Data extracted from [Regressit](https://regressit.com/data.html)\
+Original data source from S&P500
