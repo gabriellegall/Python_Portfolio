@@ -16,3 +16,7 @@ The data-set aims to answer the following key questions:
 6. Does Life Expectancy have positive or negative relationship with drinking alcohol?
 7. Do densely populated countries tend to have lower life expectancy?
 8. What is the impact of Immunization coverage on life Expectancy?
+
+## Source
+Text and data extracted from [Kaggle](https://www.kaggle.com/kumarajarshi/life-expectancy-who)
+Original data source from the World Health Organization
