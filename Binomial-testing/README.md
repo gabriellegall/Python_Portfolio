@@ -1,7 +1,8 @@
+# Context
 Source : https://en.wikipedia.org/wiki/Binomial_test
-
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image1.PNG?raw=true)
 
+# Code
 ```
 import scipy
 import numpy as np
