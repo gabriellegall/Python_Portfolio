@@ -7,38 +7,38 @@ import numpy as np
 import matplotlib.pyplot as plt 
 
 # Settings
-Ga = 0.05                       # Minimum growth
-Gb = 0.1                        # Most likely growth
-Gc = 0.15                       # Maximum growth
-Pa = 0.05                       # Minimum profit margin
-Pb = 0.1                        # Most likely profit margin
-Pc = 0.15                       # Maximum profit margin
+Ga = 0.05                                                                       # Minimum growth
+Gb = 0.1                                                                        # Most likely growth
+Gc = 0.15                                                                       # Maximum growth
+Pa = 0.05                                                                       # Minimum profit margin
+Pb = 0.1                                                                        # Most likely profit margin
+Pc = 0.15                                                                       # Maximum profit margin
 
-R0 = 23.5                       # Revenue today
-K  = [2, 2.5, 2.5]              # Strike prices in 1,2,3 years
-# K  = [2.5, 3, 3, 3.5, 3.5]    # Strike prices in 1,2,3,4,5 years
-D  = 0.12                       # Discount rate
-N  = 1000000                    # Number of simulations
+R0 = 23.5                                                                       # Revenue today
+K  = [2, 2.5, 2.5]                                                              # Strike prices in 1,2,3 years
+# K  = [2.5, 3, 3, 3.5, 3.5]                                                    # Strike prices in 1,2,3,4,5 years
+D  = 0.12                                                                       # Discount rate
+N  = 1000000                                                                    # Number of simulations
 
 # Simulation
 R       = pd.DataFrame([[R0]], index=range(0,N)) # Repeat R0 throughout N rows
-O       = pd.DataFrame()        # Create an empty dataframe
-P       = pd.DataFrame()        # Create an empty dataframe
-PVP     = pd.DataFrame()        # Create an empty dataframe
-E       = pd.DataFrame()        # Create an empty dataframe
+O       = pd.DataFrame()                                                        # Create an empty dataframe
+P       = pd.DataFrame()                                                        # Create an empty dataframe
+PVP     = pd.DataFrame()                                                        # Create an empty dataframe
+E       = pd.DataFrame()                                                        # Create an empty dataframe
 
-for i in range(1,len(K)+1):                 # Loop for each future year : i = 1,2,..,len(K)
+for i in range(1,len(K)+1):                                                     # Loop for each future year : i = 1,2,..,len(K)
 
-    RandG   = pd.DataFrame(np.random.triangular(Ga, Gb, Gc, N)) # Generate N growth random variables
-    RandP   = pd.DataFrame(np.random.triangular(Pa, Pb, Pc, N)) # Generate N profit margin random variables
+    RandG   = pd.DataFrame(np.random.triangular(Ga, Gb, Gc, N))                 # Generate N growth random variables
+    RandP   = pd.DataFrame(np.random.triangular(Pa, Pb, Pc, N))                 # Generate N profit margin random variables
  
-    R[i]    = R[i-1]*(1+RandG[0])           # Calculate the revenue at year i based on the previous year
-    O[i]    = R[i] * RandP[0]               # Calculate the operating income at year i
-    P[i]    = O[i] - K[i-1]                 # Calculate the payoff at year i (step 1)
-    P[P<0]  = 0                             # Calculate the payoff at year i (step 2) : Max(P,0)
-    PVP[i]  = P[i] / (1+D) ** i             # Discount the payoff to get the present value
+    R[i]    = R[i-1]*(1+RandG[0])                                               # Calculate the revenue at year i based on the previous year
+    O[i]    = R[i] * RandP[0]                                                   # Calculate the operating income at year i
+    P[i]    = O[i] - K[i-1]                                                     # Calculate the payoff at year i (step 1)
+    P[P<0]  = 0                                                                 # Calculate the payoff at year i (step 2) : Max(P,0)
+    PVP[i]  = P[i] / (1+D) ** i                                                 # Discount the payoff to get the present value
     
-E[0] = PVP.sum(axis=1)                      # Earnout values across N simulations
+E[0] = PVP.sum(axis=1)                                                          # Earnout values across N simulations
 
 # Analysis
 Summary = E.describe()
