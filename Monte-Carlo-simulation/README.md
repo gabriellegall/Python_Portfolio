@@ -41,7 +41,7 @@ for i in range(1,len(K)+1):                                                     
 E[0] = PVP.sum(axis=1)                                                          # Earnout values across N simulations
 
 # Analysis
-Summary = E.describe()
+Summary = E.describe()                                                          # Get the main statistical properties
 
 # Plot
 E.hist(bins=100)
