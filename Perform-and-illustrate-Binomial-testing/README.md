@@ -8,9 +8,9 @@ import numpy as np
 import matplotlib.pyplot as plt 
 
 # Settings
-N       = 235                                                                  # Number of draws
-p       = 1/6                                                                  # Probability that the event occurs
-alpha   = 0.05                                                                 # Significance level
+N       = 235                                                                   # Number of draws
+p       = 1/6                                                                   # Probability that the event occurs
+alpha   = 0.05                                                                  # Significance level
 
 # Simulations
 Results = np.zeros(shape=(N+1,4))                                               # Create an array to store all results                            
