@@ -11,11 +11,11 @@ RawData = pd.read_csv(url, error_bad_lines=False)
 Y = RawData.drop(['Date','SP_500'], axis=1).pct_change().iloc[1:]               # Calculate the % change for all stocks and remove the first row
 X = RawData[['SP_500']].pct_change().iloc[1:]                                   # Calculate the % change for S&P 500 and remove the first row
 
-b   = np.array([]) # Empty array for the regression coefficient Beta
-bse = np.array([]) # Empty array for the standard error of the regression coefficient Beta
-t   = np.array([]) # Empty array for the tStat of the regression coefficient Beta
-p   = np.array([]) # Empty array for the pValue of the regression coefficient Beta
-r2  = np.array([]) # Empty array for the adjusted R²
+b   = np.array([])                                                              # Empty array for the regression coefficient Beta
+bse = np.array([])                                                              # Empty array for the standard error of the regression coefficient Beta
+t   = np.array([])                                                              # Empty array for the tStat of the regression coefficient Beta
+p   = np.array([])                                                              # Empty array for the pValue of the regression coefficient Beta
+r2  = np.array([])                                                              # Empty array for the adjusted R²
 
 for column in Y:
     
