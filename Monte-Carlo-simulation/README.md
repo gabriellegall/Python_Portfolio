@@ -54,14 +54,14 @@ figure, axes = plt.subplots(nrows=1, ncols=2)                                   
 ratio = 1                                                                       # Define the aspect ratio of the plots
 
 axes[0].hist(RandG.values,bins=100)                                             # Plot a histogram
-axes[0].set_title('Growth variables')                                           # Set the titre
+axes[0].set_title('Growth variables')                                           # Set the title
 axes[0].tick_params(axis='both', which='major', labelsize=8)                    # Resize x and y labels
 xleft, xright = axes[0].get_xlim()                                              # Get the x limits
 ybottom, ytop = axes[0].get_ylim()                                              # Get the y limits
 axes[0].set_aspect(abs((xright-xleft)/(ybottom-ytop))*ratio)                    # Set the x and y axis square
 
 axes[1].hist(RandP.values,bins=100)                                             # Plot a histogram
-axes[1].set_title('Profit margin variables')                                    # Set the titre
+axes[1].set_title('Profit margin variables')                                    # Set the title
 axes[1].tick_params(axis='both', which='major', labelsize=8)                    # Resize x and y labels
 xleft, xright = axes[1].get_xlim()                                              # Get the x limits
 ybottom, ytop = axes[1].get_ylim()                                              # Get the y limits
