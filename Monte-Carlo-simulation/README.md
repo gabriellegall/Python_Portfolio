@@ -21,7 +21,7 @@ D  = 0.12                                                                       
 N  = 1000000                                                                    # Number of simulations
 
 # Simulation
-R       = pd.DataFrame([[R0]], index=range(0,N)) # Repeat R0 throughout N rows
+R       = pd.DataFrame([[R0]], index=range(0,N))                                # Repeat R0 throughout N rows
 O       = pd.DataFrame()                                                        # Create an empty dataframe
 P       = pd.DataFrame()                                                        # Create an empty dataframe
 PVP     = pd.DataFrame()                                                        # Create an empty dataframe
