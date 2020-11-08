@@ -37,7 +37,7 @@ alphaIdx = np.abs(Results[:,3]-alpha).argmin()                                  
 plt.vlines(alphaIdx, 0, 1, linewidth=1, colors ='red',                          # Add a reference line to the plot to identify the significance threshold
            label=' k='+str(alphaIdx)
            +' (alpha='+str(round(Results[alphaIdx,3],2))+')')                   # Set the label for the reference line
-plt.legend()                                                                    # plot the label defined previously
+plt.legend()                                                                    # Plot the label defined previously
 
 # Hypothesis testing
 pValue2 = Results[51,3]                                                         # Probability to obtain equal or more extreme results than 51 times the event
