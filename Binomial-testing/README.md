@@ -47,6 +47,8 @@ pValue1 = scipy.stats.binom_test(51,N,p, alternative='greater')                 
 # https://stackoverflow.com/questions/568962/how-do-i-create-an-empty-array-matrix-in-numpy
 ```
 
+# Code 2
+
 ```
 import scipy
 import numpy as np
