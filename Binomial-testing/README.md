@@ -46,3 +46,43 @@ pValue1 = scipy.stats.binom_test(51,N,p, alternative='greater')                 
 # Best Practice
 # https://stackoverflow.com/questions/568962/how-do-i-create-an-empty-array-matrix-in-numpy
 ```
+
+```
+import scipy
+import numpy as np
+import matplotlib.pyplot as plt 
+
+
+# Settings
+N       = 235                                                                   # Number of draws
+p       = 1/6                                                                   # Probability that the event occurs
+alpha   = 0.05                                                                  # Significance level
+
+# Simulations
+k       = list(range(1,N+1))
+pK      = np.array([scipy.stats.binom.pmf(i, N, p) for i in k])
+cdf     = np.cumsum(pK)-pK                                                      # P(X<k)     : Generate the cdf (cumulative pdf), i.e. the probability to obtain lower results than the current one
+invcdf  = 1-cdf                                                                 # P(X>=k)    : Generate the inverse cdf, i.e. the probability to obtain equal or more extreme results than the current one
+
+# Plots
+plt.figure(0)                                                                   # Declare the new figure
+plt.plot(pK)                                                                    # Plot the pdf
+plt.title('Probability density function')                                       # Add title
+plt.xlabel('k')                                                                 # Add x label
+plt.ylabel('P(X=k)')                                                            # Add y label
+
+plt.figure(2)                                                                   # Declare the new figure
+plt.plot(invcdf)                                                                # Plot the inverse cdf
+plt.title('Inverse cumulative probability density function')                    # Add title
+plt.xlabel('k')                                                                 # Add x label
+plt.ylabel('P(X>=k)')                                                           # Add y label
+alphaIdx = np.abs(invcdf-alpha).argmin()                                        # Row index corresponding to the closest inverse cdf value relative to the significance level
+plt.vlines(alphaIdx, 0, 1, linewidth=1, colors ='red',                          # Add a reference line to the plot to identify the significance threshold
+           label=' k='+str(alphaIdx)
+           +' (alpha='+str(round(invcdf[alphaIdx],2))+')')                      # Set the label for the reference line
+plt.legend()                                                                    # Plot the label defined previously
+
+# Hypothesis testing
+pValue1 = scipy.stats.binom_test(51,N,p, alternative='greater')                 # Probability to obtain equal or more extreme results than 51 times the event (using the function)
+pValue2 = invcdf[51]    
+```
