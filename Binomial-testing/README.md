@@ -4,7 +4,7 @@ Source : https://en.wikipedia.org/wiki/Binomial_test
 
 # Code
 ```
-import scipy
+import scipy.stats
 import numpy as np
 import matplotlib.pyplot as plt 
 
