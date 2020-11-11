@@ -1,3 +1,5 @@
+Adapter le code pour utiliser un dictionnaire
+
 # Code
 ```
 import pandas as pd
