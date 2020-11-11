@@ -50,7 +50,7 @@ pValue1 = scipy.stats.binom_test(51,N,p, alternative='greater')                 
 # Code 2
 
 ```
-import scipy
+import scipy.stats
 import numpy as np
 import matplotlib.pyplot as plt 
 
