@@ -10,8 +10,6 @@ Draws = 1000                                                                    
 Alpha = 0.01                                                                    # Significance level
 
 AlltStat = []                                                                   # Create a list to store all tstats
-AllpValue = []
-
 AllSizes = range (1,Sizes+1)
 for j in AllSizes:                                                              # Loop through each sample size
     Sample = [np.mean(np.random.randint(2, size=j)) for i in range(0,Draws)]    # Store the average as many times as specified in the Draws variable
