@@ -18,8 +18,9 @@ for j in AllSizes:                                                              
     
 plt.plot(AllSizes,AlltStat)                                                     # Plot the tStat results
 tCrit = scipy.stats.chi2.isf(Alpha, 2)                                          # Get the critical value for the test statistic (Chi² distribution with 2df)
-plt.axhline(y=tCrit, color='r', linestyle='-')                                  # Add a reference line for the significance level
+plt.axhline(y=tCrit, color='r', linestyle='-',label=r'$\alpha$ ='+str(Alpha))   # Add a reference line for the significance level
 plt.title('tStats for the JB test ('+str(Draws)+' draws)')                      # Add title
 plt.xlabel('Sample size')                                                       # Add x label
 plt.ylabel('tStat')                                                             # Add y label
+plt.legend()                                                                    # Plot the label defined previously
 ```
