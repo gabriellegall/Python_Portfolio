@@ -77,4 +77,4 @@ for i in I:
 ```
 
 
-[bp](# Best Practice : https://stackoverflow.com/questions/26309962/appending-a-list-or-series-to-a-pandas-dataframe-as-a-row)
+[bp](https://stackoverflow.com/questions/26309962/appending-a-list-or-series-to-a-pandas-dataframe-as-a-row)
