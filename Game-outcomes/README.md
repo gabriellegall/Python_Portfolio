@@ -75,3 +75,6 @@ for i in I:
     plt.xlabel('Number of desired hidden cards (k)')
     plt.ylabel('Number of hidden cards (n)')
 ```
+
+
+[bp](# Best Practice : https://stackoverflow.com/questions/26309962/appending-a-list-or-series-to-a-pandas-dataframe-as-a-row)
