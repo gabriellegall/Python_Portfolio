@@ -112,7 +112,7 @@ for i in I:
     pdAllRecord.append(pdRecord)
 
     plt.figure(i)
-    ax = sns.heatmap(pdRecord.pivot('n','k','pX'), annot=True, vmin=0, vmax=1, xticklabels=K, yticklabels=N)
+    ax = sns.heatmap(pdRecord.pivot('n','k','pX'), annot=True, vmin=0, vmax=1)
     ax.invert_yaxis()
     plt.title('Probability of a sucess with '+str(i)+' draws')
     plt.xlabel('Number of desired hidden cards (k)')
