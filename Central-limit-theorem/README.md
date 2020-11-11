@@ -12,8 +12,8 @@ Alpha = 0.01                                                                    
 AlltStat = []                                                                   # Create a list to store all tstats
 AllSizes = range (1,Sizes+1)
 for j in AllSizes:                                                              # Loop through each sample size
-    Sample = [np.mean(np.random.randint(2, size=j)) for i in range(0,Draws)]    # Store the average as many times as specified in the Draws variable
-    tStat,_ = scipy.stats.jarque_bera(Sample)                                   # Test for the normality and get the tStat result
+    Averages = [np.mean(np.random.randint(2, size=j)) for i in range(0,Draws)]  # Store the average as many times as specified in the Draws variable
+    tStat,_ = scipy.stats.jarque_bera(Averages)                                 # Test for the normality and get the tStat result
     AlltStat.append(tStat)                                                      # Store the tStat result
     
 plt.plot(AllSizes,AlltStat)                                                     # Plot the tStat results
