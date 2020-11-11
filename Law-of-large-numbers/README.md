@@ -23,11 +23,10 @@ plt.axhline(y=Mu, color='r', linestyle='-')                                     
 import matplotlib.pyplot as plt 
 import numpy as np
 
-N       = 1000                                                                  # Maximum number of simulations (and maximum sample size)
+max_sample_size = 1000                                                          # Maximum number of simulations (and maximum sample size)
+sample_sizes    = list(range(1,N+1))                                            # Create a list with all sample sizes
+sample_averages = [np.random.randint(2, size=i).mean() for i in x]              # Calculate and store the average of the sample with size i
 
-x       = list(range(1,N+1))                                                    # Create a list with all sample sizes
-y       = [np.random.randint(2, size=i).mean() for i in x]                      # Calculate and store the average of the sample with size i
-
-plt.plot(x,y)                                                                   # Plot the results
+plt.plot(sample_sizes,sample_averages)                                          # Plot the results
 plt.axhline(y=0.5, color='r', linestyle='-')                                    # Add a reference line for the theoretical mean
 ```
