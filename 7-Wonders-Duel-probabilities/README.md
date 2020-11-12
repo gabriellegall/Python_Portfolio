@@ -118,7 +118,7 @@ for i in I:
     plt.xlabel('Number of desired hidden cards (k)')
     plt.ylabel('Number of hidden cards (n)')
 ```
-
+# Code 4
 ```
 import seaborn as sns
 import matplotlib.pyplot as plt
