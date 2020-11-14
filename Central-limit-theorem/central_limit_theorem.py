@@ -7,6 +7,10 @@ sample_sizes    = [1,2,5,10,30,50]
 draws           = 1000
 alpha           = 0.05
 
+fig, axs = plt.subplots(2,3,figsize = (16, 9))
+fig.tight_layout(pad=5)
+fig.suptitle("Distributions of the sample averages")
+
 def axis_format():
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
@@ -14,10 +18,6 @@ def axis_format():
     ax.spines['left'].set_color('lightgrey')
     ax.tick_params(axis='x', colors='lightgrey')
     ax.tick_params(axis='y', colors='lightgrey')
-
-fig, axs = plt.subplots(2,3,figsize = (16, 9))
-fig.tight_layout(pad=5)
-fig.suptitle("Distributions of the sample averages")
 
 test_statistics = []
 for ax, j in zip(axs.flatten(), sample_sizes):  
@@ -28,7 +28,7 @@ for ax, j in zip(axs.flatten(), sample_sizes):
     test_statistic,_ = scipy.stats.jarque_bera(averages)
     test_statistics.append(test_statistic)
     
-    # plot
+    # plot the distributions
     plt.axes(ax)
     plt.hist(averages,bins=50)  
     plt.xticks(np.arange(0, 1, step=0.25))
@@ -41,7 +41,7 @@ for ax, j in zip(axs.flatten(), sample_sizes):
     ax.set_aspect(abs((xright-xleft)/(ybottom-ytop))*1) # set the axis square
 
 test_critical = scipy.stats.chi2.isf(alpha, 2)
-# plot
+# plot the test statistics
 fig, ax = plt.subplots(figsize = (16, 9))
 plt.plot(sample_sizes,test_statistics)
 plt.axhline(y=test_critical, color='r', linestyle='-',label=r'significance level $\alpha$ ='+str(alpha))
