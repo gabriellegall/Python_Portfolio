@@ -9,7 +9,7 @@
 
 **Context** : the central limit theorem states that, given a sufficiently large sample size, the sampling distribution of the averages for a variable will approximate a normal distribution regardless of that variable’s distribution in the population. The required sample size depends on how far the population distribution is from a normal distribution (typically researchers assume a sample size of 30).
 
-**Script** : this script shows the sampling distribution of 1000 averages for different sample sizes of a Bernoulli random variable. The script also contains results of a normality test (Jarque–Bera test) for each of those distributions.
+**Script** : this script shows the sampling distribution of 1000 averages for Bernoulli samples with various sizes. The script also contains results of a normality test (Jarque–Bera test) for each of those distributions.
 
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image3.PNG)
 
