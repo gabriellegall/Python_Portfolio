@@ -32,7 +32,6 @@ for ax, j in zip(axs.flatten(), sample_sizes):
     plt.axes(ax)
     plt.hist(averages,bins=50)  
     plt.xticks(np.arange(0, 1, step=0.25))
-    plt.title('sample size '+str(j))  
     ax.set_title('sample size '+str(j),color='grey')
     plt.xlabel('avg. value')
     ax.xaxis.label.set_color('lightgrey')
