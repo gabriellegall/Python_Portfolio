@@ -24,3 +24,37 @@ plt.xlabel('Sample size')                                                       
 plt.ylabel('tStat')                                                             # Add y label
 plt.legend()                                                                    # Plot the label defined previously
 ```
+
+# Code 2
+
+```
+import numpy as np
+import matplotlib.pyplot as plt 
+
+Sizes = [1,2,5,10,30,50]
+Draws = 1000
+fig, axs = plt.subplots(1,6)
+
+c=0
+for j in Sizes:
+    Averages = [np.mean(np.random.randint(2, size=j)) for i in range(0,Draws)]
+    
+    plt.axes(axs[c])
+    plt.hist(Averages,bins=50)
+    plt.title('N = '+str(j))  
+    plt.xticks(np.arange(0, 1, step=0.25))
+
+    xleft, xright = axs[c].get_xlim()
+    ybottom, ytop = axs[c].get_ylim()
+    axs[c].set_aspect(abs((xright-xleft)/(ybottom-ytop))*1)
+    
+    axs[c].spines['top'].set_visible(False)
+    axs[c].spines['right'].set_visible(False)
+    axs[c].spines['bottom'].set_color('lightgrey')
+    axs[c].spines['left'].set_color('lightgrey')
+    axs[c].tick_params(axis='x', colors='lightgrey')
+    axs[c].tick_params(axis='y', colors='lightgrey')
+    axs[c].title.set_color('grey')        
+    
+    c+=1
+```
