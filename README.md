@@ -25,6 +25,6 @@
 
 **Context** : the capital asset pricing model (CAPM) describes the relationship between systematic risk (market risk) and expected returns for assets, particularly stocks. The regression coefficient Beta is therefore a metric to evaluate the risk compensation that investors should expect for investing in a specific company.
 
-**Script** : this script computes the linear regression coefficient Beta for stock returns from 3 different companies. The choosen independent varaible is the S&P 500 market return. In this example, the risk free rate is assumed to be zero.
+**Script** : this script computes the linear regression coefficient Beta for stock returns from 3 different companies. The choosen independent variable is the S&P 500 market return. In this example, the risk free rate is assumed to be zero.
 
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image1.PNG?raw=true)
