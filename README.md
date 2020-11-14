@@ -9,8 +9,7 @@
 
 **Context** :
 
-**Script** : it shows the sampling distribution of 1000 averages for different sample sizes. The script also contains results of a normality test for each of those distributions (
-Jarque–Bera test)
+**Script** : it shows the sampling distribution of 1000 averages for different sample sizes. The script also contains results of a normality test (Jarque–Bera test) for each of those distributions.
 
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image3.PNG)
 
