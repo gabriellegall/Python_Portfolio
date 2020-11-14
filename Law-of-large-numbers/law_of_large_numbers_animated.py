@@ -33,6 +33,7 @@ def animate(i):
 anim = animation.FuncAnimation(fig, animate, frames = len(x) + 1, interval = 1, blit = False)
 plt.show()
 
+# save the .gif image
 f = r"D://Gabriel/animation.gif" 
 writergif = animation.PillowWriter(fps=30) 
 anim.save(f, writer=writergif)
