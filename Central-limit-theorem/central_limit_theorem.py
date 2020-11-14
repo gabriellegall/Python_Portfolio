@@ -16,8 +16,8 @@ def axis_format():
     ax.spines['right'].set_visible(False)
     ax.spines['bottom'].set_color('lightgrey')
     ax.spines['left'].set_color('lightgrey')
-    ax.tick_params(axis='x', colors='lightgrey')
-    ax.tick_params(axis='y', colors='lightgrey')
+    ax.tick_params(axis='x', colors='grey')
+    ax.tick_params(axis='y', colors='grey')
 
 test_statistics = []
 for ax, j in zip(axs.flatten(), sample_sizes):  
