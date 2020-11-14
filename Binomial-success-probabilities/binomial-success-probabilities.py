@@ -35,7 +35,7 @@ fig.suptitle("Probability of a success per number of draws")
 
 for i, ax in zip(nb_draws, axs):
     sns.heatmap(results[results['nb_draws']==i].pivot('nb_hidden_cards','nb_desired_cards','proba_success'), annot=True, vmin=0, vmax=1, ax = ax, cbar=False)
-    ax.set_title('Probability of at least a sucess with '+str(i)+' draws',color='grey',pad=20)
+    ax.set_title('Probability of at least a sucess with '+str(i)+' draw(s)',color='grey',pad=20)
     ax.set_xlabel('Number of desired hidden cards',color='grey')
     ax.set_ylabel('Number of hidden cards',color='grey')
     axis_format()
