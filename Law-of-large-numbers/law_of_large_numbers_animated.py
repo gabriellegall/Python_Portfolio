@@ -2,13 +2,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import animation
 
-# Data
+# parameters
 max_sample_size  = 500
 theoretical_mean = 0.5
+
+# simulations
 sample_sizes     = list(range(1,max_sample_size+1))
 sample_averages  = [np.random.randint(2, size=i).mean() for i in sample_sizes]
 
-# Dynamic plot
+# dynamic plot
 x = sample_sizes
 y = sample_averages
 fig, ax = plt.subplots(1, 1, figsize = (16, 9))
@@ -16,12 +18,18 @@ fig, ax = plt.subplots(1, 1, figsize = (16, 9))
 def animate(i):
     ax.cla()
     ax.plot(x[:i], y[:i])
-    ax.set_title('Illustration of the Law of Large Numbers')
-    ax.set_xlabel('Sample size', fontsize=10)
     ax.set_ylim([min(y), max(y)])
     plt.axhline(y=theoretical_mean, color='r', linestyle='-')   
-    plt.legend(('Sample average','Theoretical average'))
-    
+    plt.legend(('sample average','theoretical average'))
+    ax.set_title('Sample average per sample size')
+    ax.set_xlabel('sample size')
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['bottom'].set_color('lightgrey')
+    ax.spines['left'].set_color('lightgrey')
+    ax.tick_params(axis='x', colors='grey')
+    ax.tick_params(axis='y', colors='grey')
+        
 anim = animation.FuncAnimation(fig, animate, frames = len(x) + 1, interval = 1, blit = False)
 plt.show()
 
