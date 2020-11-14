@@ -22,13 +22,7 @@ def get_proba_success(hidden_cards,desired_cards,draws):
 
 results = pd.DataFrame(itertools.product(nb_draws, nb_desired_cards, nb_hidden_cards), columns=('nb_draws', 'nb_desired_cards', 'nb_hidden_cards'))
 results['proba_success'] = [get_proba_success(n, k, i) for i, k, n in results[['nb_draws', 'nb_desired_cards', 'nb_hidden_cards']].values]
-
-def axis_format():
-    ax.spines['top'].set_visible(False)
-    ax.spines['right'].set_visible(False)
-    ax.spines['bottom'].set_color('lightgrey')
-    ax.spines['left'].set_color('lightgrey')
-
+ 
 fig, axs = plt.subplots(1,3,figsize = (16, 9))
 fig.tight_layout(pad=5)
 fig.suptitle("Probability of a success per number of draws")
@@ -38,7 +32,10 @@ for i, ax in zip(nb_draws, axs):
     ax.set_title('Probability of at least a sucess with '+str(i)+' draw(s)',color='grey',pad=20)
     ax.set_xlabel('Number of desired hidden cards',color='grey')
     ax.set_ylabel('Number of hidden cards',color='grey')
-    axis_format()
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['bottom'].set_color('lightgrey')
+    ax.spines['left'].set_color('lightgrey')
     xleft, xright = ax.get_xlim()
     ybottom, ytop = ax.get_ylim()
     ax.set_aspect(abs((xright-xleft)/(ybottom-ytop))*1)
