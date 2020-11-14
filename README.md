@@ -7,7 +7,7 @@
 
 ## [Central Limit Theorem](https://github.com/gabriellegall/Python_Portfolio/blob/main/Central-limit-theorem/central_limit_theorem.py)
 
-**Context** : the central limit theorem states that, given a sufficiently large sample size, the sampling distribution of the averages for a variable will approximate a normal distribution regardless of that variable’s distribution in the population. The required sample size depends on how far the population distribution is from a normal distribution (typically researchers assume a sample size of 30).
+**Context** : the central limit theorem (CLT) states that, given a sufficiently large sample size, the sampling distribution of the averages for a variable will approximate a normal distribution regardless of that variable’s distribution in the population. The required sample size depends on how far the population distribution is from a normal distribution (typically researchers assume a sample size of 30).
 
 **Script** : this script shows the sampling distribution of 1000 averages for Bernoulli samples with various sizes. The script also contains results of a normality test (Jarque–Bera test) for each of those distributions.
 
@@ -15,8 +15,16 @@
 
 ## [Law of Large Numbers](https://github.com/gabriellegall/Python_Portfolio/blob/main/Law-of-large-numbers/law_of_large_numbers_animated.py)
 
-**Context** : the law of large numbers states that, as a sample size grows, its average gets closer to the population average. Another way to express this rule is that the absolute deviation from the population average tends tends towards zero as the sample size grows.
+**Context** : the law of large numbers (LLN) states that, as a sample size grows, its average gets closer to the population average. Another way to express this rule is that the absolute deviation from the population average tends tends towards zero as the sample size grows.
 
 **Script** : this script calculates the sample average of a Bernoulli variable for various sample sizes and plots the results in a dynamic time series.
 
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image2.GIF)
+
+## [Linear Regression]()
+
+**Context** : the capital asset pricing model (CAPM) describes the relationship between systematic risk (market risk) and expected return for assets, particularly stocks. The regression coefficient Beta is therefore a metric to evaluate the risk compensation that investors should expect.
+
+**Script** : this script computes the linear regression coefficient Beta for stock returns from 3 different companies. The choosen independent varaible is the S&P 500 market return. In this example, the risk free rate is assumed to be zero.
+
+![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image1.PNG?raw=true)
