@@ -14,8 +14,9 @@
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image3.PNG)
 
 ## [Law of Large Numbers](https://github.com/gabriellegall/Python_Portfolio/blob/main/Law-of-large-numbers/law_of_large_numbers_animated.py)
-![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image2.GIF)
 
 **Context** : the law of large numbers states that, as a sample size grows, its average gets closer to the population average.
 
 **Script** : this script calculates the sample average for various sample sizes and plots the results in a dynamic time series.
+
+![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image2.GIF)
