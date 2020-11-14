@@ -30,7 +30,7 @@ for stock, ax in zip(stocks_returns,axs):
     p_value.append(linear_regression.pvalues[1])
     r_squared.append(linear_regression.rsquared_adj)
     
-    # plot the regressions
+    # plot the regression
     sm.graphics.plot_fit(linear_regression,1,ax=ax)
     ax.set_ylim([-0.3, 0.3])
     ax.set_title(r'$\beta$ '+stock+' = '+str(round(linear_regression.params[1],2)),pad=20)
