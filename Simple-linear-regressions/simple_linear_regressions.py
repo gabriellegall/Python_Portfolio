@@ -20,7 +20,6 @@ fig.tight_layout(pad=5)
 fig.suptitle(r'$\beta$ coefficients for various companies (monthly)')
 
 for stock, ax in zip(stocks_returns,axs):
-    
     # linear regression
     linear_regression = sm.OLS(stocks_returns[stock].values,sm.add_constant(market_returns).values).fit()
     
