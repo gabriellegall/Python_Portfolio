@@ -17,6 +17,6 @@
 
 **Context** : the law of large numbers states that, as a sample size grows, its average gets closer to the population average. Another way to express this rule is that the absolute deviation from the population average tends tends towards zero as the sample size grows.
 
-**Script** : this script calculates the sample average for various sample sizes and plots the results in a dynamic time series.
+**Script** : this script calculates the sample average of a Bernoulli variable for various sample sizes and plots the results in a dynamic time series.
 
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image2.GIF)
