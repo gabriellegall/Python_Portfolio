@@ -15,7 +15,7 @@
 
 ## [Law of Large Numbers](https://github.com/gabriellegall/Python_Portfolio/blob/main/Law-of-large-numbers/law_of_large_numbers_animated.py)
 
-**Context** : the law of large numbers (LLN) states that, as a sample size grows, its average gets closer to the population average. Another way to express this rule is that the absolute deviation from the population average tends tends towards zero as the sample size grows.
+**Context** : the law of large numbers (LLN) states that, as a sample size grows, its average gets closer to the population average. Another way to express this rule is that the absolute deviation from the population average tends towards zero as the sample size grows.
 
 **Script** : this script calculates the sample average of a Bernoulli variable for various sample sizes and plots the results in a dynamic time series.
 
