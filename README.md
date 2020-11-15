@@ -3,7 +3,7 @@
 
 **Script** : this script calculates the probabilities of a sucess across a binomial tree with 1,2 and 3 branches for all scenarios of 'desired hidden cards' and 'hidden cards' (no replacement).
 
-![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image4.PNG)
+![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image4.PNG?raw=true)
 
 ## [Central Limit Theorem](https://github.com/gabriellegall/Python_Portfolio/blob/main/Central-limit-theorem/central_limit_theorem.py)
 
@@ -11,7 +11,7 @@
 
 **Script** : this script shows the sampling distribution of 1000 averages for Bernoulli samples with various sizes. The script also contains results of a normality test (Jarque–Bera test) for each of those distributions.
 
-![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image3.PNG)
+![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image3.PNG?raw=true)
 
 ## [Law of Large Numbers](https://github.com/gabriellegall/Python_Portfolio/blob/main/Law-of-large-numbers/law_of_large_numbers_animated.py)
 
@@ -19,7 +19,7 @@
 
 **Script** : this script calculates the sample average of a Bernoulli variable for various sample sizes and plots the results in a dynamic time series.
 
-![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image2.GIF)
+![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image2.GIF?raw=true)
 
 ## [Simple Linear Regression](https://github.com/gabriellegall/Python_Portfolio/blob/main/Simple-linear-regressions/simple_linear_regressions.py)
 
