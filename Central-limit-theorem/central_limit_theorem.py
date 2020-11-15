@@ -49,3 +49,5 @@ plt.title('Test statistics for the Jarque–Bera test')
 plt.xlabel('sample size')                                         
 plt.ylabel('test statistic')                          
 axis_format()
+
+# credit : thanks to u/YesLod (Reddit) for helping me on this code
