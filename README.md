@@ -13,7 +13,7 @@
 
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image3.PNG?raw=true)
 
-## [Law of Large Numbers](https://github.com/gabriellegall/Python_Portfolio/blob/main/Law-of-large-numbers/law_of_large_numbers_animated.py)
+## [Law of Large Numbers](https://github.com/gabriellegall/Python_Portfolio/blob/main/Law-of-large-numbers/law_of_large_numbers_animated_v1.py)
 
 **Context** : the law of large numbers (LLN) states that, as a sample size grows, its average gets closer to the population average. Another way to express this rule is that the absolute deviation from the population average tends towards zero as the sample size grows.
 
