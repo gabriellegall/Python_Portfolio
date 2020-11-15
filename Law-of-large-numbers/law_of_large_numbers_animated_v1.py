@@ -6,7 +6,7 @@ from matplotlib import animation
 max_sample_size  = 500
 theoretical_mean = 0.5
 
-# dynamic plot
+# initiate the plot
 sample_sizes, sample_averages = [0], [0]
 fig, ax = plt.subplots(1, 1, figsize = (16, 9))
 line, = ax.plot(sample_sizes, sample_averages)
@@ -22,6 +22,7 @@ ax.spines['left'].set_color('lightgrey')
 ax.tick_params(axis='x', colors='grey')
 ax.tick_params(axis='y', colors='grey')
 
+# dynamic plot
 def animate(i):
     sample_sizes.append(i)
     sample_averages.append(np.random.randint(2, size=i).mean())
