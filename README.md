@@ -6,10 +6,11 @@
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image4.PNG?raw=true)
 
 ## [Binomial testing](https://github.com/gabriellegall/Python_Portfolio/blob/main/Binomial-testing/binomial_testing.py)
-**Context** : 
+**Context** : The binomial test is a simple but powerful statistical tool that I have used on some occasions to confront certain hypotheses to a statistical reality. 
 
+**Script** : 
 
-**Script** : [the example](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image6.PNG?raw=true) from [the Wikipedia page](https://en.wikipedia.org/wiki/Binomial_test)
+[the example](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image6.PNG?raw=true) from [the Wikipedia page](https://en.wikipedia.org/wiki/Binomial_test)
 
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image5.PNG?raw=true)
 
