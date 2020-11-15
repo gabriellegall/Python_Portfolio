@@ -24,7 +24,6 @@ pv_payoff       = pd.DataFrame()
 earnout_value   = pd.DataFrame()
 
 for i in range(1,len(strike_prices)+1):
-
     growths           = pd.DataFrame(np.random.triangular(min_growth, likely_growth, max_growth, nb_simulations))
     margins           = pd.DataFrame(np.random.triangular(min_margin, likely_margin, max_margin, nb_simulations))
  
