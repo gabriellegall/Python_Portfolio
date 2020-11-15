@@ -39,3 +39,5 @@ for i, ax in zip(nb_draws, axs):
     xleft, xright = ax.get_xlim()
     ybottom, ytop = ax.get_ylim()
     ax.set_aspect(abs((xright-xleft)/(ybottom-ytop))*1)
+
+# credit : thanks to u/familytreebeard (Reddit) for helping me on this code
