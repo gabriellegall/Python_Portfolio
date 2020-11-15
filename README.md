@@ -1,16 +1,10 @@
-## [Binomial success probabilities](https://github.com/gabriellegall/Python_Portfolio/blob/main/Binomial-success-probabilities/binomial_success_probabilities.py)
-**Context** : one of my favorite board games is called [7 Wonders Duel](https://board-games-galore.fandom.com/wiki/7_Wonders:_Duel). It's a card based strategy game which involves some risk taking and gambling at the most decisive points. In those scenarios, some critical cards (called 'desired hidden cards' below) can get revealed among all the cards present on the board ('hidden cards'). Hence, we want to know the probability of obtaining one of those critical cards among all hidden cards if we get to play 1,2,3 times in a row. 
+## [Simple Linear Regression](https://github.com/gabriellegall/Python_Portfolio/blob/main/Simple-linear-regressions/simple_linear_regressions.py)
 
-**Script** : this script calculates the probabilities of a sucess across a binomial tree with 1,2 and 3 branches for all scenarios of 'desired hidden cards' and 'hidden cards' (no replacement).
+**Context** : the capital asset pricing model (CAPM) describes the relationship between systematic risk (market risk) and expected returns for assets, particularly stocks. The regression coefficient Beta is therefore a metric to evaluate the risk compensation that investors should expect for investing in a specific company.
 
-![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image4.PNG?raw=true)
+**Script** : this script computes the linear regression coefficient Beta for stock returns from 3 different companies. The choosen independent variable is the S&P 500 market return. In this example, the risk free rate is assumed to be zero. The data was taken from the [Regressit website](https://regressit.com/data.html) ("Monthly stock returns")
 
-## [Binomial testing](https://github.com/gabriellegall/Python_Portfolio/blob/main/Binomial-testing/binomial_testing.py)
-**Context** : the binomial test is a simple but powerful statistical tool that I have used on some occasions to confront certain hypotheses to a statistical reality. It is an exact test of the statistical significance of deviations from a theoretically expected distribution of observations into two categories.
-
-**Script** : this script **illustrates** [the example](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image6.PNG?raw=true) from [the Wikipedia page](https://en.wikipedia.org/wiki/Binomial_test) on binomial testing. This example tests whether the number of "6" obtained from 251 dice rolls can help us determine if the dice is rigged to return this number more often (one-sided test).
-
-![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image5.PNG?raw=true)
+![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image1.PNG?raw=true)
 
 ## [Central Limit Theorem](https://github.com/gabriellegall/Python_Portfolio/blob/main/Central-limit-theorem/central_limit_theorem.py)
 
@@ -28,10 +22,16 @@
 
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image2.GIF?raw=true)
 
-## [Simple Linear Regression](https://github.com/gabriellegall/Python_Portfolio/blob/main/Simple-linear-regressions/simple_linear_regressions.py)
+## [Binomial success probabilities](https://github.com/gabriellegall/Python_Portfolio/blob/main/Binomial-success-probabilities/binomial_success_probabilities.py)
+**Context** : one of my favorite board games is called [7 Wonders Duel](https://board-games-galore.fandom.com/wiki/7_Wonders:_Duel). It's a card based strategy game which involves some risk taking and gambling at the most decisive points. In those scenarios, some critical cards (called 'desired hidden cards' below) can get revealed among all the cards present on the board ('hidden cards'). Hence, we want to know the probability of obtaining one of those critical cards among all hidden cards if we get to play 1,2,3 times in a row. 
 
-**Context** : the capital asset pricing model (CAPM) describes the relationship between systematic risk (market risk) and expected returns for assets, particularly stocks. The regression coefficient Beta is therefore a metric to evaluate the risk compensation that investors should expect for investing in a specific company.
+**Script** : this script calculates the probabilities of a sucess across a binomial tree with 1,2 and 3 branches for all scenarios of 'desired hidden cards' and 'hidden cards' (no replacement).
 
-**Script** : this script computes the linear regression coefficient Beta for stock returns from 3 different companies. The choosen independent variable is the S&P 500 market return. In this example, the risk free rate is assumed to be zero. The data was taken from the [Regressit website](https://regressit.com/data.html) ("Monthly stock returns")
+![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image4.PNG?raw=true)
 
-![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image1.PNG?raw=true)
+## [Binomial testing](https://github.com/gabriellegall/Python_Portfolio/blob/main/Binomial-testing/binomial_testing.py)
+**Context** : the binomial test is a simple but powerful statistical tool that I have used on some occasions to confront certain hypotheses to a statistical reality. It is an exact test of the statistical significance of deviations from a theoretically expected distribution of observations into two categories.
+
+**Script** : this script **illustrates** [the example](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image6.PNG?raw=true) from [the Wikipedia page](https://en.wikipedia.org/wiki/Binomial_test) on binomial testing. This example tests whether the number of "6" obtained from 251 dice rolls can help us determine if the dice is rigged to return this number more often (one-sided test).
+
+![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image5.PNG?raw=true)
