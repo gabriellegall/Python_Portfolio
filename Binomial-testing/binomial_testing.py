@@ -10,9 +10,9 @@ alpha           = 0.05
 
 # simulations
 draws                   = list(range(0,max_nb_draws+1))
-proba_distrib           = np.array([scipy.stats.binom.pmf(i, max_nb_draws, proba_success) for i in draws]) # P(X=k)
-cum_proba_distrib       = np.cumsum(proba_distrib)-proba_distrib                # P(X<k)
-inv_cum_proba_distrib   = 1-cum_proba_distrib                                   # P(X>=k)
+proba_distrib           = np.array([scipy.stats.binom.pmf(i, max_nb_draws, proba_success) for i in draws])  # P(X=k)
+cum_proba_distrib       = np.cumsum(proba_distrib)-proba_distrib                                            # P(X<k)
+inv_cum_proba_distrib   = 1-cum_proba_distrib                                                               # P(X>=k)
 
 # plots
 def axis_format():
@@ -35,7 +35,7 @@ plt.plot(draws,inv_cum_proba_distrib)
 ax.set_title('Inverse cumulative probability distribution function',pad=20)
 ax.set_xlabel('number of successes (k)',color='grey')
 ax.set_ylabel('probability of at least k successes P(X>=k)',color='grey')
-alphaIdx = np.abs(inv_cum_proba_distrib-alpha).argmin()                         # Retrive the critical value
+alphaIdx = np.abs(inv_cum_proba_distrib-alpha).argmin()
 plt.vlines(alphaIdx, 0, 1, linewidth=1, colors ='red',
            label=' critical value k='+str(alphaIdx)
            +r' ($\alpha$='+str(round(inv_cum_proba_distrib[alphaIdx],2))+')')
