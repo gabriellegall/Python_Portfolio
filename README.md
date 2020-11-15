@@ -6,9 +6,9 @@
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image4.PNG?raw=true)
 
 ## [Binomial testing](https://github.com/gabriellegall/Python_Portfolio/blob/main/Binomial-testing/binomial_testing.py)
-**Context** : the binomial test is a simple but powerful statistical tool that I have used on some occasions to confront certain hypotheses to a statistical reality. 
+**Context** : the binomial test is a simple but powerful statistical tool that I have used on some occasions to confront certain hypotheses to a statistical reality.
 
-**Script** : this script illustrates [the example](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image6.PNG?raw=true) from [the Wikipedia page](https://en.wikipedia.org/wiki/Binomial_test) on binomial testing. This example tests whether the number of "6" obtained from 251 dice rolls can allow us to determine if the dice is rigged and returns this number more often (left tailed test). 
+**Script** : this script illustrates [the example](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image6.PNG?raw=true) from [the Wikipedia page](https://en.wikipedia.org/wiki/Binomial_test) on binomial testing. This example tests whether the number of "6" obtained from 251 dice rolls can allow us to determine if the dice is rigged to return this number more often (right tailed test). 
 
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image5.PNG?raw=true)
 
