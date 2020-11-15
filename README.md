@@ -1,3 +1,11 @@
+## [Simple Linear Regression](https://github.com/gabriellegall/Python_Portfolio/blob/main/Monte-Carlo-simulation/monte_carlo_simulation.py)
+
+**Context** : 
+
+**Script** : 
+
+![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image7.PNG?raw=true)
+
 ## [Simple Linear Regression](https://github.com/gabriellegall/Python_Portfolio/blob/main/Simple-linear-regressions/simple_linear_regressions.py)
 
 **Context** : the capital asset pricing model (CAPM) describes the relationship between systematic risk (market risk) and expected returns for assets, particularly stocks. The regression coefficient Beta is therefore a metric to evaluate the risk compensation that investors should expect for investing in a specific company.
