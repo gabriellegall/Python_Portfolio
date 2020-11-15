@@ -6,7 +6,7 @@
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image4.PNG?raw=true)
 
 ## [Binomial testing](https://github.com/gabriellegall/Python_Portfolio/blob/main/Binomial-testing/binomial_testing.py)
-**Context** : the binomial test is a simple but powerful statistical tool that I have used on some occasions to confront certain hypotheses to a statistical reality. The binomial test is an exact test of the statistical significance of deviations from a theoretically expected distribution of observations into two categories.
+**Context** : the binomial test is a simple but powerful statistical tool that I have used on some occasions to confront certain hypotheses to a statistical reality. It is an exact test of the statistical significance of deviations from a theoretically expected distribution of observations into two categories.
 
 **Script** : this script illustrates [the example](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image6.PNG?raw=true) from [the Wikipedia page](https://en.wikipedia.org/wiki/Binomial_test) on binomial testing. This example tests whether the number of "6" obtained from 251 dice rolls can help us determine if the dice is rigged to return this number more often (one-sided test).
 
