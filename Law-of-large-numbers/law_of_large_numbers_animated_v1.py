@@ -24,16 +24,20 @@ ax.tick_params(axis='y', colors='grey')
 
 # dynamic plot
 def animate(i):
-    sample_sizes.append(i)
-    sample_averages.append(np.random.randint(2, size=i).mean())
+    sample_sizes.append(i+1)
+    sample_averages.append(np.random.randint(2, size=i+1).mean())
     line.set_data(sample_sizes,sample_averages)
-    plt.xlim(min(sample_sizes), max(sample_sizes))
+    plt.xlim(1, max(sample_sizes))
+
+def init(): # pass the initiation 
+    pass
 
 anim = animation.FuncAnimation(fig,
     animate,
     max_sample_size,
     interval = 1,
-    repeat=False)
+    repeat=False,
+    init_func=init)
 plt.show()
 
 # save the .gif image
@@ -41,4 +45,4 @@ f = r"D://Gabriel/animation.gif"
 writergif = animation.PillowWriter(fps=30) 
 anim.save(f, writer=writergif)
 
-# credit : thanks to u/socal_nerdtastic (Reddit) for helping me on this code
+# credit : thanks to u/socal_nerdtastic and u/pain_vin_boursin (Reddit) for helping me on this code
