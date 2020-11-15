@@ -40,3 +40,5 @@ plt.show()
 f = r"D://Gabriel/animation.gif" 
 writergif = animation.PillowWriter(fps=30) 
 anim.save(f, writer=writergif)
+
+# credit : thanks to u/socal_nerdtastic (Reddit) for helping me on this code
