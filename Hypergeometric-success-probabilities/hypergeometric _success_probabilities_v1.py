@@ -18,7 +18,6 @@ results = pd.DataFrame(itertools.product(nb_min_success, nb_draws, nb_desired_ca
 results['proba_success'] = [scipy.stats.hypergeom.sf(k, N, K, n) for k, N, K, n in results[['nb_min_success','nb_hidden_cards','nb_desired_cards','nb_draws']].values]
 
 for k in nb_min_success:
-
     fig, axs = plt.subplots(1,3,figsize = (16, 9))
     fig.tight_layout(pad=5)
     fig.suptitle('Probability of at least '+str(k+1)+' success(s) per number of draws')
