@@ -32,9 +32,9 @@
 
 ## [Hypergeometric success probabilities](https://github.com/gabriellegall/Python_Portfolio/blob/main/Hypergeometric-success-probabilities/hypergeometric%20_success_probabilities_v1.py)
 
-**Context** : one of my favorite board games is called [7 Wonders Duel](https://board-games-galore.fandom.com/wiki/7_Wonders:_Duel). It's a card based strategy game which involves some risk taking and gambling at the most decisive points. In those scenarios, some critical cards can get revealed among all the cards present on the board. Hence, we want to know the probability of obtaining at least 1,2,3 of those critical cards among all hidden cards if we get to play 1,2,3 times in a row. 
+**Context** : one of my favorite board games is called [7 Wonders Duel](https://board-games-galore.fandom.com/wiki/7_Wonders:_Duel). It's a card based strategy game which involves some risk taking and gambling at the most decisive points. In those scenarios, some critical cards can get revealed among all the cards present on the board. In this context, we want to know the probability of obtaining at least 1,2,3 of those critical cards among all hidden cards if we get to play 1,2,3 times in a row. 
 
-**Script** : this script calculates the probabilities of at least 1,2,3 sucess(es) across a probability tree with 1,2 and 3 branches for all scenarios of 'desired hidden cards' and 'hidden cards' (hypergeometric distribution). below is the result of at least 1 success across the 3 branches for all scenarios.
+**Script** : this script calculates the probabilities of at least 1,2,3 sucess(es) across a probability tree with 1,2 and 3 branches for all scenarios of 'desired hidden cards' and 'hidden cards' (hypergeometric distribution). Below are the probabilities of at least 1 success if we get to play 1,2,3 times in a row for all scenarios.
 
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image4.PNG?raw=true)
 
