@@ -8,7 +8,7 @@ nb_success      = 51
 proba_success   = 1/6
 alpha           = 0.05
 
-# simulations
+# probabilities
 draws                   = list(range(0,max_nb_draws+1))
 proba_distrib           = np.array([scipy.stats.binom.pmf(i, max_nb_draws, proba_success) for i in draws])  # P(X=k)
 cum_proba_distrib       = np.cumsum(proba_distrib)-proba_distrib                                            # P(X<k)
