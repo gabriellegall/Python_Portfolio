@@ -14,6 +14,14 @@
 
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image1.PNG?raw=true)
 
+## [A/B Proportion Testing](https://github.com/gabriellegall/Python_Portfolio/blob/main/AB-proportion-testing/ab_proportion_testing.py)
+
+**Context** :
+
+**Script** :
+
+![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image8.PNG?raw=true)
+
 ## [Central Limit Theorem](https://github.com/gabriellegall/Python_Portfolio/blob/main/Central-limit-theorem/central_limit_theorem.py)
 
 **Context** : the central limit theorem (CLT) states that, given a sufficiently large sample size, the sampling distribution of the averages for a variable will approximate a normal distribution regardless of that variable’s distribution in the population. The required sample size depends on how far the population distribution is from a normal distribution (typically researchers assume a sample size of 30).
