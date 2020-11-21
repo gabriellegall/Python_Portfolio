@@ -16,7 +16,7 @@
 
 ## [A/B Proportion Testing](https://github.com/gabriellegall/Python_Portfolio/blob/main/AB-proportion-testing/ab_proportion_testing.py)
 
-**Context** :
+**Context** : the question of whether or not there is a significant difference between the average response of two groups in an experiment can be answered with a z-test based on the central limit theorem. the theory behind the A/B proportion testing is described in further details [my notes](https://github.com/gabriellegall/Python_Portfolio/blob/main/documentation/ab_proportion_testing.pdf)
 
 **Script** :
 
