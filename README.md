@@ -16,7 +16,7 @@
 
 ## [A/B Proportion Testing](https://github.com/gabriellegall/Python_Portfolio/blob/main/AB-proportion-testing/ab_proportion_testing.py)
 
-**Context** : the question of whether or not there is a significant difference between the average response of two groups in an experiment can be answered with a z-test based on the central limit theorem. More precisely, the proportion of response in both groups can be seen as a bernoulli random variable which average sampling distribution in known. The theory behind the A/B proportion testing is described in further details [my notes](https://github.com/gabriellegall/Python_Portfolio/blob/main/documentation/ab_proportion_testing.pdf)
+**Context** : the question of whether or not there is a significant difference between the mean response of two groups in an experiment can be solved by a z-test based on the central limit theorem. Specifically, the proportion of response in the two groups can be thought of as a Bernoulli random variable with a known mean sampling distribution. The theory behind the A/B proportion test is described in more detail in [my notes.](https://github.com/gabriellegall/Python_Portfolio/blob/main/documentation/ab_proportion_testing.pdf) The data and the use case was taken from [an article](https://towardsdatascience.com/the-math-behind-a-b-testing-with-example-code-part-1-of-2-7be752e1d06f) published on towardsdatascience. 
 
 **Script** : this script illustrates the scipy.stats.proportions_ztest function and breaks down the theory behind it to achieve the same results.
 
