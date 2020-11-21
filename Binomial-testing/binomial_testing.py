@@ -15,7 +15,6 @@ draws                   = list(range(0,max_nb_draws+1))
 proba_distrib           = np.array([stats.binom.pmf(i, max_nb_draws, proba_success) for i in draws])    # P(X=k)
 cum_proba_distrib       = np.cumsum(proba_distrib)-proba_distrib                                        # P(X<k)
 inv_cum_proba_distrib   = 1-cum_proba_distrib                                                           # P(X>=k)
-
 p_value                 = inv_cum_proba_distrib[nb_success]
 
 def axis_format():
