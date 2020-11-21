@@ -30,6 +30,13 @@
 
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image8.PNG?raw=true)
 
+## [Binomial testing](https://github.com/gabriellegall/Python_Portfolio/blob/main/Binomial-testing/binomial_testing.py)
+**Context** : the binomial test is a simple but powerful statistical tool that I have used on some occasions to confront certain hypotheses to a statistical reality. It is an exact test of the statistical significance of deviations from a theoretically expected distribution of observations into two categories.
+
+**Script** : this script breaks down the theory behind binomial hypothesis testing for illustration purpose. It is based on [the example](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image6.PNG?raw=true) from [the Wikipedia page](https://en.wikipedia.org/wiki/Binomial_test) on binomial testing. This example tests whether the number of "6" obtained from 251 dice rolls can help us determine if the dice is rigged to return this number more often (one-sided test).
+
+![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image5.PNG?raw=true)
+
 ## [Simple Linear Regression](https://github.com/gabriellegall/Python_Portfolio/blob/main/Simple-linear-regressions/simple_linear_regressions.py)
 
 **Context** : the capital asset pricing model (CAPM) describes the relationship between systematic risk (market risk) and expected returns for assets, particularly stocks. The regression coefficient Beta is therefore a metric to evaluate the risk compensation that investors should expect for investing in a specific company.
@@ -45,10 +52,3 @@
 **Script** : this script calculates the probabilities of at least 1,2,3 sucess(es) across a probability tree with 1,2 and 3 branches for all scenarios of 'desired hidden cards' and 'hidden cards'. Below are the probabilities of at least 1 success if we get to play 1,2,3 times in a row for all scenarios.
 
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image4.PNG?raw=true)
-
-## [Binomial testing](https://github.com/gabriellegall/Python_Portfolio/blob/main/Binomial-testing/binomial_testing.py)
-**Context** : the binomial test is a simple but powerful statistical tool that I have used on some occasions to confront certain hypotheses to a statistical reality. It is an exact test of the statistical significance of deviations from a theoretically expected distribution of observations into two categories.
-
-**Script** : this script breaks down the theory behind binomial hypothesis testing for illustration purpose. It is based on [the example](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image6.PNG?raw=true) from [the Wikipedia page](https://en.wikipedia.org/wiki/Binomial_test) on binomial testing. This example tests whether the number of "6" obtained from 251 dice rolls can help us determine if the dice is rigged to return this number more often (one-sided test).
-
-![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image5.PNG?raw=true)
