@@ -32,7 +32,7 @@
 
 ## [A/B proportion testing](https://github.com/gabriellegall/Python_Portfolio/blob/main/AB-proportion-testing/ab_proportion_testing.py)
 
-**Context** : the question of whether or not there is a significant difference between the mean response of two groups in an experiment can be solved by a z-test based on the central limit theorem. Specifically, the proportion of response in the two groups can be thought of as a Bernoulli random variable with a known mean sampling distribution. The theory behind the A/B proportion test is described in more detail in [my notes.](https://github.com/gabriellegall/Python_Portfolio/blob/main/documentation/ab_proportion_testing.pdf) The data and the use case was taken from [an article](https://towardsdatascience.com/the-math-behind-a-b-testing-with-example-code-part-1-of-2-7be752e1d06f) published on towardsdatascience. 
+**Context** : the question of whether or not there is a significant difference between the mean response of two groups in an experiment can be solved by a z-test based on the central limit theorem. Specifically, the proportion of response in the two groups can be thought of as a Bernoulli random variable with a known mean sampling distribution. The theory behind the A/B proportion test is described in more detail in [my notes.](https://github.com/gabriellegall/Python_Portfolio/blob/main/documentation/ab_proportion_testing.pdf) The data and the use case was taken from [an article](https://towardsdatascience.com/the-math-behind-a-b-testing-with-example-code-part-1-of-2-7be752e1d06f) published on towardsdatascience in which the percent response to a webpage design is compared to a control group (two-sided test). 
 
 **Script** : this script illustrates the scipy.stats.proportions_ztest function and breaks down the theory behind it to achieve the same results.
 
@@ -49,6 +49,6 @@
 
 **Context** : the capital asset pricing model (CAPM) describes the relationship between systematic risk (market risk) and expected returns for assets, particularly stocks. The regression coefficient Beta is therefore a metric to evaluate the risk compensation that investors should expect for investing in a specific company.
 
-**Script** : this script computes the linear regression coefficient Beta for stock returns from 3 different companies. The choosen independent variable is the S&P 500 market return. In this example, the risk free rate is assumed to be zero. The data was taken from the [Regressit website](https://regressit.com/data.html) ("Monthly stock returns")
+**Script** : this script computes the linear regression coefficient Beta for stock returns from 3 different companies. The choosen independent variable is the S&P 500 market return. In this example, the risk free rate is assumed to be zero. The monthly stock returns were taken from the [Regressit website.](https://regressit.com/data.html)
 
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image1.PNG?raw=true)
