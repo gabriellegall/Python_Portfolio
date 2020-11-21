@@ -8,7 +8,7 @@
 
 ## [Central Limit Theorem](https://github.com/gabriellegall/Python_Portfolio/blob/main/Central-limit-theorem/central_limit_theorem.py)
 
-**Context** : the central limit theorem (CLT) states that, given a sufficiently large sample size, the sampling distribution of the averages for a variable will approximate a normal distribution regardless of that variable’s distribution in the population. The required sample size depends on how far the population distribution is from a normal distribution (typically researchers assume a sample size of 30).
+**Context** : the central limit theorem (CLT) states that, given a sufficiently large sample size, the sampling distribution of the averages for a variable will approximate a normal distribution regardless of that variable’s distribution in the population. This theory is central to hypothesis testing since it enables researchers to know the sampling distribution of averages for any random variable with finite mean and variance.
 
 **Script** : this script shows the sampling distribution of 1000 averages for Bernoulli samples with various sizes. The script also contains results of a normality test (Jarque–Bera test) for each of those distributions.
 
