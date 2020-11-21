@@ -1,20 +1,23 @@
-import scipy.stats
+import scipy.stats as stats
 import numpy as np
 import matplotlib.pyplot as plt 
 
-# parameters
 max_nb_draws    = 235
 nb_success      = 51
 proba_success   = 1/6
 alpha           = 0.05
 
-# probabilities
-draws                   = list(range(0,max_nb_draws+1))
-proba_distrib           = np.array([scipy.stats.binom.pmf(i, max_nb_draws, proba_success) for i in draws])  # P(X=k)
-cum_proba_distrib       = np.cumsum(proba_distrib)-proba_distrib                                            # P(X<k)
-inv_cum_proba_distrib   = 1-cum_proba_distrib                                                               # P(X>=k)
+#%% using scipy.stats.binom_test
+p_value = stats.binom_test(nb_success,max_nb_draws,proba_success, alternative='greater') # right tailed test (probability of getting more extreme results)
 
-# plots
+#%% theory behind the function
+draws                   = list(range(0,max_nb_draws+1))
+proba_distrib           = np.array([stats.binom.pmf(i, max_nb_draws, proba_success) for i in draws])    # P(X=k)
+cum_proba_distrib       = np.cumsum(proba_distrib)-proba_distrib                                        # P(X<k)
+inv_cum_proba_distrib   = 1-cum_proba_distrib                                                           # P(X>=k)
+
+p_value                 = inv_cum_proba_distrib[nb_success]
+
 def axis_format():
     ax.spines['top'].set_color('lightgrey')
     ax.spines['right'].set_color('lightgrey')
@@ -41,7 +44,3 @@ plt.vlines(alphaIdx, 0, 1, linewidth=1, colors ='red',
            +r' ($\alpha$='+str(round(inv_cum_proba_distrib[alphaIdx],2))+')')
 plt.legend()
 axis_format()
-
-# hypothesis testing
-p_value_1 = scipy.stats.binom_test(nb_success,max_nb_draws,proba_success, alternative='greater') # right tailed test (probability of getting more extreme results)
-p_value_2 = inv_cum_proba_distrib[nb_success] # p_value_1 = p_value_2
