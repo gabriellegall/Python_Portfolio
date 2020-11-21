@@ -30,7 +30,7 @@
 
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image2.GIF?raw=true)
 
-## [A/B Proportion Testing](https://github.com/gabriellegall/Python_Portfolio/blob/main/AB-proportion-testing/ab_proportion_testing.py)
+## [A/B proportion testing](https://github.com/gabriellegall/Python_Portfolio/blob/main/AB-proportion-testing/ab_proportion_testing.py)
 
 **Context** : the question of whether or not there is a significant difference between the mean response of two groups in an experiment can be solved by a z-test based on the central limit theorem. Specifically, the proportion of response in the two groups can be thought of as a Bernoulli random variable with a known mean sampling distribution. The theory behind the A/B proportion test is described in more detail in [my notes.](https://github.com/gabriellegall/Python_Portfolio/blob/main/documentation/ab_proportion_testing.pdf) The data and the use case was taken from [an article](https://towardsdatascience.com/the-math-behind-a-b-testing-with-example-code-part-1-of-2-7be752e1d06f) published on towardsdatascience. 
 
@@ -45,7 +45,7 @@
 
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image5.PNG?raw=true)
 
-## [Simple Linear Regression](https://github.com/gabriellegall/Python_Portfolio/blob/main/Simple-linear-regressions/simple_linear_regressions.py)
+## [Simple linear regression](https://github.com/gabriellegall/Python_Portfolio/blob/main/Simple-linear-regressions/simple_linear_regressions.py)
 
 **Context** : the capital asset pricing model (CAPM) describes the relationship between systematic risk (market risk) and expected returns for assets, particularly stocks. The regression coefficient Beta is therefore a metric to evaluate the risk compensation that investors should expect for investing in a specific company.
 
