@@ -52,3 +52,12 @@
 **Script** : this script computes the linear regression coefficient Beta for stock returns from 3 different companies. The choosen independent variable is the S&P 500 market return. In this example, the risk free rate is assumed to be zero. The monthly stock returns were taken from the [Regressit website.](https://regressit.com/data.html)
 
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image1.PNG?raw=true)
+
+## [Logistic regression](https://github.com/gabriellegall/Python_Portfolio/blob/main/Logistic-regression/logistic_regression.py)
+
+**Context** : 
+
+**Script** : 
+
+![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image9.PNG?raw=true)
+
