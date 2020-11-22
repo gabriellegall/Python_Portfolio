@@ -55,9 +55,9 @@
 
 ## [Logistic regression](https://github.com/gabriellegall/Python_Portfolio/blob/main/Logistic-regression/logistic_regression.py)
 
-**Context** : 
+**Context** : the logistic regression is a predictive analysis for binary outcomes. This statistical tool can be used for classification problems involving multiple independent variables. In this example, we use a univariate logistic regression to predict the outcome of an exam based on the number of hours studied.
 
-**Script** : 
+**Script** : this script performs a logistic regression on the results of an exam (pass/fail) based on the number of hours studied. The regression is performed using the default regression model (Limited-memory Broyden-Fletcher-Goldfarb-Shanno Algorithm)
 
 ![illustration](https://github.com/gabriellegall/Python_Portfolio/blob/main/images/image9.PNG?raw=true)
 
