@@ -32,7 +32,7 @@ fig, ax = plt.subplots(figsize = (16, 9))
 plt.scatter(hours_studied.ravel(), exam_results, c = ['green' if i == 1 else 'red' for i in exam_results_pred_correct])
 plt.scatter(hours_studied, expit(hours_studied * beta + alpha), color = 'grey')
 x = np.linspace(min(hours_studied), max(hours_studied), 1000)
-plt.plot(x, expit(x * beta + alpha), color='grey', linewidth=1) # expit(x) = 1/(1+np.exp(-(x * beta + alpha)))
+plt.plot(x, expit(x * beta + alpha), color='grey', linewidth=1) # expit(x) = 1/(1+np.exp(-x))
 
 ax.yaxis.set_major_formatter(mtick.PercentFormatter(1,decimals=0))
 ax.set_title('Logistic regression for exam sucess probabilities ('+'{:.0%}'.format(score)+' accuracy)',pad=20)
